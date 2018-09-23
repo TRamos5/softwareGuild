@@ -10,25 +10,68 @@ Most recent revision:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Menu Page</title>
+    <link rel="stylesheet" href="styles/restaurantStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <style>
+        .table1{
+            width: 100%;
+            display: table;
+            background-color: rgb(197, 180, 153);
+        }
+
+        .tableRow{
+            display: table-row;
+            text-align: center;
+        }
+
+        .article{
+            display: table-cell;
+            width: 250px;
+        }
+
+        .menuItem{
+            font-size: 25px;
+        }
+
+        .table2E{
+            width: 100%;
+            height: 80%;
+        }
+
+        .table2{
+            width: 80%;
+            margin: auto;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: rgb(197, 180, 153);
+        }
+
+        tbody tr:nth-child(odd) {
+             background-color: rgb(170, 169, 169);
+        }
+
+
+    </style>
 </head>
 <body>
-    <header style="text-align: center">
-        <h1>Burger For You</h1>
+    <header>
+        <h1 class="restaurantName">Burger For You</h1>
     </header>  
     <hr />
 
     <nav> 
-         <a href="index.html">Home</a>
-         <a href="menu.html" style="margin-left: 20px">Menu</a>
-         <a href="contact.html" style="margin-left: 20px">Contact Us</a>
+         <a class="aa" href="index.html">Home</a>
+         <a class="aa" href="menu.html" style="margin-left: 20px">Menu</a>
+         <a class="aa" href="contact.html" style="margin-left: 20px">Contact Us</a>
     </nav>
     <hr />
 
-    <div style="width: 100%; display: table;">
+    <div class="table1">
 
-        <div style="display: table-row; text-align: center">
-            <article style="width: 250px; display: table-cell;">
-                <h3>Burger and Fries</h3>
+        <div class="tableRow">
+            <article class="article">
+                <h3 class="menuItem">Burger and Fries</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Explicabo amet eum excepturi suscipit ex? Aut molestias natus aliquam, 
@@ -36,8 +79,8 @@ Most recent revision:
                 </p>
             </article>
 
-            <article style="width: 250px; display: table-cell;">
-                <h3>Chili Dog and Fries</h3>
+            <article class="article">
+                <h3 class="menuItem">Chili Dog and Fries</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Doloremque id laboriosam doloribus qui fugiat delectus voluptate quia asperiores voluptatibus reiciendis dolore, 
@@ -45,8 +88,8 @@ Most recent revision:
                 </p>
             </article>
             
-            <article style="width: 250px; display: table-cell;">
-                <h3>Chicken Sandwhich and Fries</h3>
+            <article class="article">
+                <h3 class="menuItem">Chicken Sandwhich and Fries</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum architecto asperiores veniam odio, 
                     adipisci cupiditate quasi 
@@ -56,9 +99,9 @@ Most recent revision:
             </article>
         </div>
 
-        <div style="display: table-row; text-align: center">
-            <article style="width: 250px; display: table-cell;">
-                <h3>Cheese Sticks</h3>
+        <div class="tableRow">
+            <article class="article">
+                <h3 class="menuItem">Cheese Sticks</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Explicabo amet eum excepturi suscipit ex? Aut molestias natus aliquam, 
@@ -66,8 +109,8 @@ Most recent revision:
                 </p>
             </article>
 
-            <article style="width: 250px; display: table-cell;">
-                <h3>Chicken Wings</h3>
+            <article class="article">
+                <h3 class="menuItem">Chicken Wings</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Doloremque id laboriosam doloribus qui fugiat delectus voluptate quia asperiores voluptatibus reiciendis dolore, 
@@ -75,8 +118,8 @@ Most recent revision:
                 </p>
             </article>
             
-            <article style="width: 250px; display: table-cell;">
-                <h3>Loaded Nachos</h3>
+            <article class="article">
+                <h3 class="menuItem">Loaded Nachos</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum architecto asperiores veniam odio, 
                     adipisci cupiditate quasi 
@@ -87,11 +130,38 @@ Most recent revision:
         </div>
 
     </div>
+
+    <div class="table2E">
+    <table class="table2">
+       <tr>
+           <th colspan="2">
+               <h3>Beverages</h3>
+           </th>
+       </tr>
+       <tr>
+           <td>Root Beer</td>
+           <td>$3.00</td>
+       </tr>
+       <tr>
+           <td>Bottled Water</td>
+           <td>$1.25</td>
+       </tr>
+       <tr>
+           <td>Lemonade</td>
+           <td>$1.00</td>
+       </tr>
+       <tr>
+           <td>Iced Tea</td>
+           <td>$1.25</td>
+       </tr>
+
+    </table>
+    </div>
   
 
-   
 
-    <footer style="text-align: center">
+
+    <footer>
         <hr />
         <p>3143 Burger Street, Austonian, Tejas, 88990</p>
         <p>(444) 839-9389</p>

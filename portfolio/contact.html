@@ -10,43 +10,58 @@ Most recent revision:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Page</title>
+    <link rel="stylesheet" href="styles/restaurantStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <style>
+        .form{
+            margin: 0 auto;
+            width: 400px;
+        }
+
+        .formLabel{
+            font:bold;
+        }
+
+        .formEnclosure{
+            height: 800px;
+        }
+    </style>
 </head>
 <body>
-    <header style="text-align: center">
-        <h1>Burger For You</h1>
+    <header>
+        <h1 class="restaurantName">Burger For You</h1>
     </header>  
     <hr />
 
     <nav> 
-         <a href="index.html">Home</a>
-         <a href="menu.html" style="margin-left: 20px">Menu</a>
-         <a href="contact.html" style="margin-left: 20px">Contact Us</a>
+         <a class="aa" href="index.html">Home</a>
+         <a class="aa" href="menu.html" style="margin-left: 20px">Menu</a>
+         <a class="aa" href="contact.html" style="margin-left: 20px">Contact Us</a>
     </nav>
     <hr />
-    <div>
-        <form style="margin:0 auto; width: 400px" action="" method="POST">
-            Name: <input type="text" name="name"/>
+    <div class="formEnclosure">
+        <form class="form" action="" method="POST">
+            <h4>Name:</h4> <input type="text" name="name"/>
             <br />
-            <br />
-            Email: <input type="text" name="Email"/>
-            <br /> <br />
-            Phone: <input type="text" name="Phone-Number"/>
-            <br />  <br />
-            Reason for Inquiry:
+            <h4>Email</h4> <input type="text" name="Email"/>
+            <br /> 
+            <h4>Phone:</h4> <input type="text" name="Phone-Number"/>
+            <br /> 
+            <h4>Reason For Inquiry:</h4>
             <select name="options">
                     <option value="catering">Catering</option>
                     <option value="privateparty">Private Party</option>
                     <option value="feedback">Feedback</option>
                     <option value="other">Other</option>
             </select>
-            <br />  <br />
-            Additional Information: <textarea name="additional"></textarea>
-            <br />  <br />
-            Have you been to the restaurant? 
+            <br />  
+            <h4>Additional Information:</h4> <textarea name="additional"></textarea>
+            <br />  
+            <h4>Have you ever been to the restaurant?</h4>
             <input type="radio" name="answer" value="yes"/>Yes 
             <input type="radio" name="answer" value="no"/>No 
-            <br />  <br />
-            Best days to contact you:
+            <br /> 
+            <h4>Best days to contact you:</h4>
             <input type="checkbox" name="choice" value="M"/>M 
             <input type="checkbox" name="choice" value="T"/>T 
             <input type="checkbox" name="choice" value="W"/>W 
@@ -62,7 +77,7 @@ Most recent revision:
 
    
 
-    <footer style="text-align: center">
+    <footer>
         <hr />
         <p>3143 Burger Street, Austonian, Tejas, 88990</p>
         <p>(444) 839-9389</p>

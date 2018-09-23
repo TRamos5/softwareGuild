@@ -1,0 +1,36 @@
+header {
+    background-color: rgb(170, 169, 169);
+    width: 100%;
+    text-align: center;
+    height: 8vh;
+}
+
+footer {
+    background-color: rgb(170, 169, 169);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+.restaurantName{
+    font-family: 'Indie Flower', cursive;
+}
+
+.aa{ 
+    color: green;
+}
+
+.aa:hover{
+    font: bold;
+    font-size: 20px;
+    color: green;
+}
+
+.aa:visited{
+    color: blue
+}
+
+.aa:active{
+    text-decoration: none;
+}
