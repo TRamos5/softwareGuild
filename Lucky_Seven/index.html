@@ -17,11 +17,15 @@
 
           <div class="row">
               <h2 class="col-5 offset-2" id="smallHead">Starting Bet:</h2>
-              <input class="col-1" id="inputSize" type="text" value="$0.00" />
+              <input class="col-1" id="initialBet" type="text" value="0.00" />
           </div>
 
           <div class="row" id="playButton">
-              <button class="col-1 offset-5">Play</button>
+              <button onclick="luckySeven();" class="col-1 offset-5">Play</button>
+          </div>
+
+          <div class="row">
+                <button onclick="luckySeven();" class="col-1 offset-5" id="again" style="visibility: hidden;">Play Again</button>
           </div>
 
           <div class="row" id="loaded">
@@ -31,11 +35,11 @@
           <div id="line"></div>
 
           <div class="row">
-                <h2 class="col-12" id="result"></h2>
+                <h2 class="col-5 offset-1" id="result" style="color: white; font-size: 80px"></h2>
           </div>
 
           <div class="row">
-                <table class="col-4 offset-2" id="table"></table>
+                <div class="col-4 offset-1" id="table"></div>
           </div>
           
 
