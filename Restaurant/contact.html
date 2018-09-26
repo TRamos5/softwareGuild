@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--
+Name: Travis Ramos
+Date Created: 09-23-2018
+Most recent revision:
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/restaurantStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+    <script type="text/javascript">
+        function thankTheUser() {
+            var alertUser = alert("Thank you for Submission");
+            document.getElementById("submit");
+        }
+    </script>
+    <style>
+        .form{
+            margin: 0 auto;
+            width: 400px;
+        }
+
+        .formLabel{
+            font:bold;
+        }
+
+        .formEnclosure{
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4 restaurantName">Burger For You</h1>
+            <p class="lead restaurantName">Opening A New Location Soon!</p>
+        </div>
+    </div>
+    
+        <nav style="width: 100%;">
+            <ul class="nav nav-pills">
+                    <li class="active aa" style="padding: 1%;"><a href="index.html">Home</a></li>
+                    <li class="aa" style="padding: 1%;"><a href="menu.html">Menu</a></li>
+                    <li class="aa" style="padding: 1%;"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <hr />
+
+    <div class="container">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Name:</label>
+                <div class="col-sm-10"> 
+                <input type="name" class="form-control" id="name" placeholder="Enter name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="phone">Phone Number:</label>
+                <div class="col-sm-10">
+                <input type="phone" class="form-control" id="phone" placeholder="Enter number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleSelect1">Reason For Inquiry:</label>
+                <select class="form-control" id="exampleSelect1">
+                    <option>Catering</option>
+                    <option>Private party</option>
+                    <option>Feedback</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleTextarea">Additional Information:</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </div>
+            <fieldset class="form-group">
+                <legend>Have you ever been to the restaurant? </legend>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                    No
+                    </label>
+                </div>
+            </fieldset>
+            <div class="form-check">
+                <legend>Best Day to Contact You:</legend>
+                <label class="form-check-label" style="margin-left: 1%;">
+                    <input type="checkbox" class="form-check-input">
+                    M
+                </label>
+                <label class="form-check-label" style="margin-left: 2%;">
+                    <input type="checkbox" class="form-check-input">
+                    T
+                </label>
+                <label class="form-check-label" style="margin-left: 2%;">
+                    <input type="checkbox" class="form-check-input">
+                    W
+                </label>
+                <label class="form-check-label" style="margin-left: 2%;">
+                    <input type="checkbox" class="form-check-input">
+                    T
+                </label>
+                <label class="form-check-label" style="margin-left: 2%;">
+                    <input type="checkbox" class="form-check-input">
+                    F
+                </label>
+            </div>
+            <div class="form-group"> 
+                <div class="col-sm-offset-2 col-sm-10">
+                <button onclick="thankTheUser();"type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+   
+
+     <footer>
+        <hr />
+        <p>3143 Burger Street, Austonian, Tejas, 88990</p>
+        <p>(444) 839-9389</p>
+    </footer>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
+</html>

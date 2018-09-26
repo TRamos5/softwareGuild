@@ -1,15 +1,11 @@
-header {
-    background-color: rgb(170, 169, 169);
-    width: 100%;
-    text-align: center;
-    height: 8vh;
+body{
+    background-color: rgb(192, 248, 187);
 }
-
 footer {
-    background-color: rgb(170, 169, 169);
+    background-color: #e8ecef;
+    position: static;
     width: 100%;
-    position: fixed;
-    bottom: 0;
+    bottom: 0px;
     text-align: center;
 }
 
@@ -33,4 +29,8 @@ footer {
 
 .aa:active{
     text-decoration: none;
+}
+
+.navBar{
+    padding: 1%
 }
